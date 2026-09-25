@@ -94,3 +94,44 @@ These queues will be used with the Lead Assignment Rule to route new enquiries t
 
 ![Lead Queues](./Screenshot/lead-queues.png)
 
+
+## Lead Assignment Rule
+
+After creating the queues, I configured a Lead Assignment Rule to automatically route enquiries based on the selected Enquiry Type.
+
+### Routing Logic
+
+| Enquiry Type | Assigned Queue |
+|---|---|
+| International Package | International Package Queue |
+| Domestic Package | Domestic Package Queue |
+| Flight Only | Flight Queue |
+
+The International Package rule is placed first, followed by Domestic Package and Flight Only.
+
+### Testing
+
+I created test Leads for all three enquiry types and checked the Lead Owner after saving.
+
+- International Package → International Package Queue
+- Domestic Package → Domestic Package Queue
+- Flight Only → Flight Queue
+
+The Assignment Rule successfully routed the test Leads to the expected queues.
+
+### Assignment Rule Setup
+
+![Lead Assignment Rule](./Screenshot/lead-assignment-rule.png)
+
+### International Lead Routing
+
+![International Lead Routing](./Screenshot/international-lead-routing.png)
+
+### Domestic Lead Routing
+
+![Domestic Lead Routing](./Screenshot/domestic-lead-routing.png)
+
+### Flight Lead Routing
+
+![Flight Lead Routing](./Screenshot/flight-lead-routing.png)
+
