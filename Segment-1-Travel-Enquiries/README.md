@@ -135,3 +135,27 @@ The Assignment Rule successfully routed the test Leads to the expected queues.
 
 ![Flight Lead Routing](./Screenshot/flight-lead-routing.png)
 
+
+## Web-to-Lead Form
+
+To capture travel enquiries from the website, I created a Salesforce Web-to-Lead form for TravelMate.
+
+The form captures:
+
+- Customer information such as Name, Email and Phone
+- Enquiry Type
+- Origin City and Destination
+- Departure and Return Date
+- Number of Adults and Children
+- Estimated Budget
+- Passport Availability
+
+The form submits the enquiry directly to Salesforce as a Lead.
+
+I also tested the form with different enquiry types and validation scenarios to verify that the data is captured correctly and routed through the Lead Assignment Rule.
+
+### Form File
+
+The HTML form is available here:
+
+`travel-enquiry-form.html`
