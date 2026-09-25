@@ -76,3 +76,21 @@ For example:
 - Basic Lead Data Management
 
 
+## Lead Queues
+
+I created three Lead queues to separate travel enquiries based on the type of enquiry.
+
+### Queues Created
+
+- Domestic Package Queue
+- International Package Queue
+- Flight Queue
+
+All three queues are configured to work with the Lead object.
+
+These queues will be used with the Lead Assignment Rule to route new enquiries to the appropriate team.
+
+### Queue Setup
+
+![Lead Queues](./Screenshot/lead-queues.png)
+
