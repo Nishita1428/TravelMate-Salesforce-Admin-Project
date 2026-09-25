@@ -153,9 +153,12 @@ The form captures:
 The form submits the enquiry directly to Salesforce as a Lead.
 
 I also tested the form with different enquiry types and validation scenarios to verify that the data is captured correctly and routed through the Lead Assignment Rule.
+-------------------------------------
+### Live Demo
 
-### Form File
+The Web-to-Lead form is hosted using GitHub Pages:
 
-The HTML form is available here:
+**[Live Travel Enquiry Form](https://nishita1428.github.io/TravelMate-Salesforce-Admin-Project/)**
+------------------------------------------
 
-`travel-enquiry-form.html`
+
