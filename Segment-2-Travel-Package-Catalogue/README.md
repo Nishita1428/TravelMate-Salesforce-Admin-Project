@@ -4,56 +4,68 @@
 
 In this segment, I built a reusable travel package catalogue for TravelMate.
 
-The setup allows a travel package to store its basic details, pricing, validity dates and capacity, while multiple itinerary records can be maintained under each package.
+The purpose was to maintain travel packages along with their day-wise itinerary details. I used Custom Objects, Master-Detail Relationship, Formula Fields, Roll-Up Summary and Validation Rules to keep the package data organized and consistent.
 
-I also used Salesforce relationships, formula fields, roll-up summaries and validation rules to keep the package data consistent.
+---
 
 ## Custom Objects
 
-### Travel Package
+### 1. Travel Package
 
-The Travel Package object stores the main package information, including:
+The Travel Package object stores the main details of a travel package.
 
-- Package Name
-- Package Type
-- Destination City
-- Destination Country
-- Start Date
-- End Date
-- Base Price Per Adult
-- Base Price Per Child
-- Maximum Travellers
-- Status
-- Package Duration
-- Total Itinerary Cost
-- Package Cost Indicator
+Fields created:
 
-### Package Itinerary
+- Package Number – Auto Number
+- Package Name – Text
+- Package Type – Picklist
+  - Domestic
+  - International
+- Destination City – Text
+- Destination Country – Text
+- Start Date – Date
+- End Date – Date
+- Base Price Per Adult – Currency
+- Base Price Per Child – Currency
+- Maximum Travellers – Number
+- Status – Picklist
+  - Draft
+  - Active
+  - Inactive
+- Package Duration – Formula
+- Total Itinerary Cost – Roll-Up Summary
+- Package Cost Indicator – Formula
 
-The Package Itinerary object stores day-wise activities for each travel package.
+---
 
-Fields include:
+### 2. Package Itinerary
 
-- Day Number
-- Activity Name
-- Activity Type
-- Activity Date
-- Activity Cost
-- Included
+The Package Itinerary object stores the day-wise activities included in a travel package.
+
+Fields created:
+
+- Itinerary Name – Text
+- Day Number – Number
+- Activity Name – Text
+- Activity Type – Picklist
+  - Travel
+  - Hotel
+  - Sightseeing
+  - Meal
+  - Leisure
+- Activity Date – Date
+- Activity Cost – Currency
+- Included – Checkbox
+
+---
 
 ## Master-Detail Relationship
 
-I created a Master-Detail relationship between Travel Package and Package Itinerary.
+I created a Master-Detail relationship between:
 
-Travel Package acts as the parent record and Package Itinerary acts as the child record.
+**Travel Package → Package Itinerary**
+
+Travel Package acts as the parent record, while Package Itinerary acts as the child record.
 
 This allows one travel package to contain multiple itinerary records.
 
-## Formula Fields
-
-### Package Duration
-
-Calculates the inclusive number of days between the package Start Date and End Date.
-
-```text
-End Date - Start Date + 1
