@@ -127,7 +127,7 @@ The TravelMate Lead Assignment Rule routes enquiries based on Enquiry Type.
 ## International Lead Routing
 
 International Package enquiries are routed to the International Package Queue.
-![International Lead Routing](./Screenshot/internation-package-queue.png)
+![International Lead Routing](./Screenshot/Internation-package-queue.png)
 
 ## Domestic Lead Routing
 
