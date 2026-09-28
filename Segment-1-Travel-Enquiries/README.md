@@ -119,21 +119,29 @@ I created test Leads for all three enquiry types and checked the Lead Owner afte
 
 The Assignment Rule successfully routed the test Leads to the expected queues.
 
-### Assignment Rule Setup
+## Assignment Rule Setup
 
-![Lead Assignment Rule](./Screenshot/lead-assignment-rule.png)
+The TravelMate Lead Assignment Rule routes enquiries based on Enquiry Type.
+![Lead Assignment Rule](./Screenshot/Lead-Assigned.png)
 
-### International Lead Routing
+## International Lead Routing
 
-![International Lead Routing](./Screenshot/international-lead-routing.png)
+International Package enquiries are routed to the International Package Queue.
+![International Lead Routing](./Screenshot/internation-package-queue.png)
 
-### Domestic Lead Routing
+## Domestic Lead Routing
 
-![Domestic Lead Routing](./Screenshot/domestic-lead-routing.png)
+Domestic Package enquiries are routed to the Domestic Package Queue.
+![Domestic Lead Routing](./Screenshot/Domestic Package Queue.png)
 
-### Flight Lead Routing
+## Flight Lead Routing
 
-![Flight Lead Routing](./Screenshot/flight-lead-routing.png)
+Flight Only enquiries are routed to the Flight Queue.
+![Flight Lead Routing](./Screenshot/Flight only queue.png)
+
+
+
+
 
 
 ## Web-to-Lead Form
